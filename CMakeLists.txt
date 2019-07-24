@@ -7,4 +7,6 @@ configure_file (
       "${PROJECT_SOURCE_DIR}/config.h.in"
       "${PROJECT_BINARY_DIR}/config.h"
       )
+option (USE_MYMATH
+       "Use provided math implementation" ON)
 add_executable(Demo main.cc)
